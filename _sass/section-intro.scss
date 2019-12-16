@@ -6,6 +6,7 @@
 
   .card-right img {
     width: 100%;
+    box-shadow: 0px 10px 35px #1d1d1d;
     @media #{$mobile} {
       margin-top: 60px;
     }
