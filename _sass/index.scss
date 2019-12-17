@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #f6f6f6;
   margin: 0;
   color: white;
   min-height: 100vh;
@@ -314,6 +314,91 @@ section {
     @include border-corners(5);
   }
 }
+.article-grid {
+  max-width: 1200px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+
+  @media #{$mobile} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$small-mobile} {
+    max-width: 400px;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#article { display:none; }
+
+.article-card {
+  background: white;
+  
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: -5px;
+  }
+
+  .text-part {
+    padding: 30px;
+  }
+  .code-and-button {
+    text-align: left;
+    .button {
+      color: #2c4c99;
+      width: 200px !important;
+      border-color: #bfc9e0;
+      font-weight: 400;
+      box-shadow: inset 0 0 25px rgba(191, 201, 224, 0.7), 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    .border-corners::before {
+      border-image-source: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 3"><rect x="0" y="0" width="3" height="3" fill="transparent" stroke="rgba(44, 76, 153, 1)" stroke-width="1" /></svg>');
+    }
+  }
+}
+
+.text-card {
+  margin: 2rem 0;
+}
+
+.post-date {
+  font-size: 12px;
+  color: #959595;
+  text-transform: uppercase;
+  margin: 15px 0;
+}
+
+.post-title {
+  font-size: 24px;
+  color: #2c4c99;
+  font-weight: bold;
+}
+
+.post-description {
+  font-size: 18px;
+  color: #464646;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 35px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.align-center {
+  text-align: center;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -601,8 +686,13 @@ table {
 @import './section-features';
 @import './section-eagle-detect';
 @import './section-trackerros';
+@import './section-hero';
 @import './section-register';
 @import './section-doc';
 @import './section-contributors';
 @import './section-users';
+@import './pricing';
+@import './blog';
+@import './post';
+@import './contact';
 @import './footer';

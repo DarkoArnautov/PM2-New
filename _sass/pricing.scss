@@ -1,0 +1,15 @@
+.pricing {
+	
+  section:nth-child(7n + 2) {
+  	.section-background {
+    	background: linear-gradient(100deg, #2d4d9c, #1c2f55) !important;
+    }
+  }
+  section:nth-child(7n + 3) {
+  	.section-background {
+    	background: linear-gradient(100deg, #1c184d, #448ccb) !important;
+    }
+  }
+
+	
+}

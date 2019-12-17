@@ -1,0 +1,7 @@
+.contact {
+  section:nth-child(7n + 2) {
+  	.section-background {
+    	background: linear-gradient(100deg, #2d4d9c, #1c2f55) !important;
+    }
+  }
+}
