@@ -347,9 +347,16 @@ section {
 
   .text-part {
     padding: 30px;
+    padding-bottom: 90px;
+    position: relative;
+    height: calc(100% - 420px);
   }
   .code-and-button {
+    position: absolute;
     text-align: left;
+    bottom: 30px;
+    right: 30px;
+
     .button {
       color: #2c4c99;
       width: 200px !important;
