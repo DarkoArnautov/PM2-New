@@ -1,4 +1,10 @@
 .pricing {
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 693px;
+  }
 	
   section:nth-child(7n + 2) {
   	.section-background {
@@ -212,6 +218,9 @@
       }
 
       @media #{$mobile} {
+        .sticky {
+          display: none !important;
+        }
         .price-container {
           display: none;
         }
