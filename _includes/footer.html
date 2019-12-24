@@ -107,18 +107,18 @@
 </script>
 
 <script>
-window.onscroll = function() {myFunction()};
+  window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("list-header");
-var sticky = header.offsetTop;
+  var header = document.getElementById("list-header");
+  var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > 500 && window.pageYOffset < 1400) {
-    header.classList.add("sticky");
-    header.style.display = "inline-flex";
-  } else {
-    header.classList.remove("sticky");
-    header.style.display = "none";
+  function myFunction() {
+    if (window.pageYOffset > 500 && window.pageYOffset < 1400) {
+      header.classList.add("sticky");
+      header.style.display = "inline-flex";
+    } else {
+      header.classList.remove("sticky");
+      header.style.display = "none";
+    }
   }
-}
 </script>

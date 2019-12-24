@@ -47,6 +47,10 @@
 	    appearance: none;
 	    background: rgba(255, 255, 255, 0.1);
 	    border-radius: 0px;
+
+	    &:invalid {
+	    	color: gray;
+	    }
 		}
 		
 		img {
